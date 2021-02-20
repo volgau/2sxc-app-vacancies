@@ -1,0 +1,42 @@
+@* @inherits ToSic.Sxc.Dnn.RazorComponent *@
+@using System;
+@using System.Collections;
+@using System.Linq;
+@using System.Text.RegularExpressions;
+@using DotNetNuke.Common;
+@using ToSic.SexyContent;
+
+@if (Globals.IsEditMode()) {
+    <div @Edit.Toolbar(ListContent)></div>
+}				
+				
+@foreach(var item in List) {
+	var c = item.Content;
+	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
+    	<div class="card card-body">
+    	    <h5 class="card-tltle">@c.Title</h5>
+        	<dl>
+        	    <dt>Company:</dt>
+        	    <dd>@c.CompanyName</dd>
+        	    @if (!string.IsNullOrEmpty (c.CompanyDesciption)) {
+            	    <dt>Company Description:</dt>
+            	    <dd>@c.CompanyDescription</dd>
+        	    }
+        	    @if (!string.IsNullOrEmpty (c.Duties)) {
+        	        <dt>Duties:</dt>
+        	        <dd>@c.Duties</dd>
+        	    }
+        	    @if (!string.IsNullOrEmpty (c.Requirements)) {
+            	    <dt>Requirements:</dt>
+            	    <dd>@c.Requirements</dd>
+        	    }
+        	    @if (!string.IsNullOrEmpty (c.WorkingConditions)) {
+            	    <dt>Working Conditions:</dt>
+            	    <dd>@c.WorkingConditions</dd>
+        	    }
+        	    <dt>Contacts:</dt>
+        	    <dd>@c.Contacts</dd>
+        	</dl>
+    	</div>
+	</div>
+}
