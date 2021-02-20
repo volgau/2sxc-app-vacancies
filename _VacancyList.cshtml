@@ -10,14 +10,14 @@
 	<div @Edit.TagToolbar(ListContent, settings: new { hover = "right" })>
         <p class="text-muted">@ListContent.Title</p>
 	</div>
-}				
+}
 
 @foreach(var item in List) {
 	var c = item.Content;
 	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
     	<div class="card card-body">
-    	    <h5 class="card-tltle">@c.Title</h5>
-        	<dl>
+    	    <h5 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h5>
+    	    <dl>
         	    <dt>Company:</dt>
         	    <dd>@c.CompanyName</dd>
         	    @if (!string.IsNullOrEmpty (c.CompanyDesciption)) {
