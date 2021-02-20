@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-02-19T23:59:02.0405124-08:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-02-20T00:20:49.2284651-08:00">
   <Header>
     <App Guid="5cd7df1b-ac28-49a2-a749-f145bae47b60" />
     <Language Default="en-US" />
@@ -14,6 +14,26 @@
     </AttributeSet>
     <AttributeSet StaticName="bbeb5411-d118-4152-8b12-a479afc38a69" Name="Vacancy" Description="" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="dae12f40-b1f9-42cb-a668-9c85b2674347" Json="True" KeyNumber="408">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c7ab464a-8f48-4fde-b66e-86e45374b23e" Json="True" KeyNumber="408">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="99d9f0d2-6bef-4b31-bf31-0db8cac89aa6" Json="True" KeyNumber="408" />
+        </Attribute>
         <Attribute StaticName="CompanyName" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="969faf7f-f791-4043-a7e2-64770a698969" Json="True" KeyNumber="406">
             <Value Key="CustomJavaScript" Value="" Type="String" />
@@ -53,26 +73,6 @@
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ec20dfe5-e58d-483f-85a5-3b179b4cac86" Json="True" KeyNumber="407" />
-        </Attribute>
-        <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="dae12f40-b1f9-42cb-a668-9c85b2674347" Json="True" KeyNumber="408">
-            <Value Key="CustomJavaScript" Value="" Type="String" />
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="Disabled" Value="False" Type="Boolean" />
-            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
-            <Value Key="InputType" Value="string-default" Type="String" />
-            <Value Key="Name" Value="Title" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Placeholder" Value="" Type="String" />
-            <Value Key="Required" Value="True" Type="Boolean" />
-            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c7ab464a-8f48-4fde-b66e-86e45374b23e" Json="True" KeyNumber="408">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="99d9f0d2-6bef-4b31-bf31-0db8cac89aa6" Json="True" KeyNumber="408" />
         </Attribute>
         <Attribute StaticName="Duties" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="70092245-24ff-4b11-8ff1-0aeefc200906" Json="True" KeyNumber="409">
@@ -177,15 +177,15 @@
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="bbeb5411-d118-4152-8b12-a479afc38a69" AttributeSetName="Vacancy" EntityGUID="d6a1ae17-1204-4f3a-b775-ae0b6b5c2406">
       <Value Key="CompanyDescription" Value="" Type="String" />
-      <Value Key="CompanyName" Value="Demo Company" Type="String" />
-      <Value Key="Contacts" Value="Demo Contacts" Type="String" />
+      <Value Key="CompanyName" Value="&lt;Demo Company&gt;" Type="String" />
+      <Value Key="Contacts" Value="&lt;Demo Contacts&gt;" Type="String" />
       <Value Key="Duties" Value="" Type="String" />
       <Value Key="Requirements" Value="" Type="String" />
-      <Value Key="Title" Value="Demo Job" Type="String" />
+      <Value Key="Title" Value="&lt;Demo Job&gt;" Type="String" />
       <Value Key="WorkingConditions" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="d5d04e96-0b8b-4334-ae3f-dae5a74cde92" AttributeSetName="VacancyList" EntityGUID="7045ad36-5749-46b7-9b2a-b003d93de581">
-      <Value Key="Title" Value="Vacancies" Type="String" />
+      <Value Key="Title" Value="&lt;Demo Vacancy List&gt;" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />

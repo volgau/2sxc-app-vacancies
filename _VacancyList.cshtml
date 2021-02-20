@@ -7,9 +7,11 @@
 @using ToSic.SexyContent;
 
 @if (Globals.IsEditMode()) {
-    <div @Edit.Toolbar(ListContent)></div>
+	<div @Edit.TagToolbar(ListContent, settings: new { hover = "right" })>
+        <p class="text-muted">@ListContent.Title</p>
+	</div>
 }				
-				
+
 @foreach(var item in List) {
 	var c = item.Content;
 	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
