@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-02-20T01:46:48.3111223-08:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-02-26T00:47:18.9659246-08:00">
   <Header>
     <App Guid="5cd7df1b-ac28-49a2-a749-f145bae47b60" />
     <Language Default="en-US" />
@@ -10,7 +10,50 @@
   </Header>
   <AttributeSets>
     <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
-      <Attributes />
+      <Attributes>
+        <Attribute StaticName="lblCompanyName" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c8bea124-9668-4960-a707-08f81cd72229" Json="True" KeyNumber="414">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CompanyName" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="lblCompanyDescription" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="303ed45f-00fe-472d-af1b-e5fe23e9e512" Json="True" KeyNumber="415">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="CompanyDescription" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="lblDuties" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="25fd75d4-c7b5-4551-8fe2-ffdf5fab2391" Json="True" KeyNumber="416">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Duties" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="lblRequirements" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="31c598b1-8dc4-41a1-af6e-30c99bd7fe52" Json="True" KeyNumber="417">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Requirements" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="lblWorkingConditions" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5112f8ef-ee47-4593-bd20-6871cb751e48" Json="True" KeyNumber="418">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="WorkingConditions" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="lblContacts" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="42f05425-886c-4e42-a721-63ae3eb8d1dd" Json="True" KeyNumber="419">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Contacts" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
       <Attributes />
@@ -64,7 +107,6 @@
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="72a519e6-5b9b-420e-8113-cd11f414ee87" Json="True" KeyNumber="406" />
         </Attribute>
         <Attribute StaticName="CompanyDescription" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ec20dfe5-e58d-483f-85a5-3b179b4cac86" Json="True" KeyNumber="407" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="0699da01-b106-4077-98e4-b61e437f2bd1" Json="True" KeyNumber="407">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -85,6 +127,7 @@
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="ec20dfe5-e58d-483f-85a5-3b179b4cac86" Json="True" KeyNumber="407" />
         </Attribute>
         <Attribute StaticName="Duties" Type="String" IsTitle="false">
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="70092245-24ff-4b11-8ff1-0aeefc200906" Json="True" KeyNumber="409">
@@ -213,7 +256,6 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="Contacts" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="736c3115-f9d3-45e8-9558-d0a0ae871b7b" Json="True" KeyNumber="412" />
           <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e922764f-0bf3-4b55-8277-798bdd342636" Json="True" KeyNumber="412">
             <Value Key="CustomJavaScript" Value="" Type="String" />
             <Value Key="DefaultValue" Value="" Type="String" />
@@ -234,6 +276,7 @@
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
           </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="736c3115-f9d3-45e8-9558-d0a0ae871b7b" Json="True" KeyNumber="412" />
         </Attribute>
       </Attributes>
     </AttributeSet>
@@ -280,7 +323,44 @@
       <Value Key="Version" Value="00.01.00" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="e1148065-eee3-466f-8fd8-713f8327ca78" KeyNumber="4" />
-    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="dfeed066-b323-4499-9006-bdfc6a6af060" KeyNumber="4" />
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="dfeed066-b323-4499-9006-bdfc6a6af060" KeyNumber="4">
+      <Value Key="lblCompanyDescription" Value="Company Description:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblCompanyDescription" Value="Описание компании:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="lblCompanyName" Value="Company:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblCompanyName" Value="Компания:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="lblContacts" Value="Contacts:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblContacts" Value="Контакты:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="lblDuties" Value="Duties:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblDuties" Value="Обязанности сотрудника:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="lblRequirements" Value="Requirements:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblRequirements" Value="Требования к кандидату:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="lblWorkingConditions" Value="Working Conditions:" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="lblWorkingConditions" Value="Условия работы:" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+    </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="fd4685d8-2729-47a1-97d8-e5b83fae45a7" Json="True">
       <Value Key="ContentDemoEntity" Value="d6a1ae17-1204-4f3a-b775-ae0b6b5c2406" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="bbeb5411-d118-4152-8b12-a479afc38a69" Type="String" />

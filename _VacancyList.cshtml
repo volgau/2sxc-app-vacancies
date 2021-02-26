@@ -18,25 +18,25 @@
     	<div class="card card-body">
     	    <h5 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h5>
     	    <dl>
-        	    <dt>Company:</dt>
+        	    <dt>@App.Resources.lblCompanyName</dt>
         	    <dd>@c.CompanyName</dd>
         	    @if (!string.IsNullOrEmpty (c.CompanyDesciption)) {
-            	    <dt>Company Description:</dt>
+            	    <dt>@App.Resources.lblCompanyDescription</dt>
             	    <dd>@c.CompanyDescription</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.Duties)) {
-        	        <dt>Duties:</dt>
+        	        <dt>@App.Resources.lblDuties</dt>
         	        <dd>@c.Duties</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.Requirements)) {
-            	    <dt>Requirements:</dt>
+            	    <dt>@App.Resources.lblRequirements</dt>
             	    <dd>@c.Requirements</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.WorkingConditions)) {
-            	    <dt>Working Conditions:</dt>
+            	    <dt>@App.Resources.lblWorkingConditions</dt>
             	    <dd>@c.WorkingConditions</dd>
         	    }
-        	    <dt>Contacts:</dt>
+        	    <dt>@App.Resources.lblContacts</dt>
         	    <dd>@c.Contacts</dd>
         	</dl>
     	</div>
