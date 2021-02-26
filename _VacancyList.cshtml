@@ -6,6 +6,8 @@
 @using DotNetNuke.Common;
 @using ToSic.SexyContent;
 
+<link rel="stylesheet" href="@App.Path/vacancies.css" />
+
 @if (Globals.IsEditMode()) {
 	<div @Edit.TagToolbar(ListContent, settings: new { hover = "right" })>
         <p class="text-muted">@ListContent.Title</p>
