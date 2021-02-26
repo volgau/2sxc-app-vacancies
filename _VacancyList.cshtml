@@ -1,4 +1,4 @@
-@* @inherits ToSic.Sxc.Dnn.RazorComponent *@
+@inherits ToSic.Sxc.Dnn.RazorComponent
 @using System;
 @using System.Collections;
 @using System.Linq;
@@ -9,13 +9,12 @@
 <link rel="stylesheet" href="@App.Path/vacancies.css" />
 
 @if (Globals.IsEditMode()) {
-	<div @Edit.TagToolbar(ListContent, settings: new { hover = "right" })>
-        <p class="text-muted">@ListContent.Title</p>
+	<div @Edit.TagToolbar(Header, settings: new { hover = "right" })>
+        <p class="text-muted">@Header.Title</p>
 	</div>
 }
 
-@foreach(var item in List) {
-	var c = item.Content;
+@foreach(var c in AsList (Data)) {
 	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
     	<div class="card card-body">
     	    <h5 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h5>
