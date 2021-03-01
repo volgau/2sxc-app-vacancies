@@ -18,27 +18,26 @@
 	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
     	<div class="card card-body">
     	    <h5 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h5>
+    	    <h6 class="card-subtitle mb-2 text-muted">@c.CompanyName</h6>
     	    <dl>
-        	    <dt>@App.Resources.lblCompanyName</dt>
-        	    <dd>@c.CompanyName</dd>
         	    @if (!string.IsNullOrEmpty (c.CompanyDesciption)) {
             	    <dt>@App.Resources.lblCompanyDescription</dt>
-            	    <dd>@c.CompanyDescription</dd>
+            	    <dd>@Html.Raw(c.CompanyDescription)</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.Duties)) {
         	        <dt>@App.Resources.lblDuties</dt>
-        	        <dd>@c.Duties</dd>
+        	        <dd>@Html.Raw(c.Duties)</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.Requirements)) {
             	    <dt>@App.Resources.lblRequirements</dt>
-            	    <dd>@c.Requirements</dd>
+            	    <dd>@Html.Raw(c.Requirements)</dd>
         	    }
         	    @if (!string.IsNullOrEmpty (c.WorkingConditions)) {
             	    <dt>@App.Resources.lblWorkingConditions</dt>
-            	    <dd>@c.WorkingConditions</dd>
+            	    <dd>@Html.Raw(c.WorkingConditions)</dd>
         	    }
         	    <dt>@App.Resources.lblContacts</dt>
-        	    <dd>@c.Contacts</dd>
+        	    <dd>@Html.Raw(c.Contacts)</dd>
         	</dl>
     	</div>
 	</div>
