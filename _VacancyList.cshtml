@@ -16,9 +16,9 @@
 
 @foreach(var c in AsList (Data)) {
 	<div @Edit.TagToolbar(Content, settings: new { hover = "right" })>
-    	<div class="card card-body">
-    	    <h5 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h5>
-    	    <h6 class="card-subtitle mb-2 text-muted">@c.CompanyName</h6>
+    	<div class="card card-body mb-3">
+    	    <h4 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h4>
+    	    <h5 class="card-subtitle mb-3">@c.CompanyName</h5>
     	    <dl>
         	    @if (!string.IsNullOrEmpty (c.CompanyDesciption)) {
             	    <dt>@App.Resources.lblCompanyDescription</dt>
