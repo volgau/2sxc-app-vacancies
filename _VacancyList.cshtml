@@ -18,7 +18,10 @@
 @foreach(var c in AsList (Data).OrderByDescending (c => c.Modified)) {
 	<div @Edit.TagToolbar(c, settings: new { hover = "right" })>
     	<div class="card card-body mb-3">
-    	    <h4 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h4>
+    	    @{
+    	        var publishDate = c.PublishDate ?? c.Modified;
+    	    }
+    	    <h4 class="card-title"><span class="badge badge-primary">@publishDate.ToShortDateString()</span> @c.Title</h4>
     	    <h5 class="card-subtitle mb-3">@c.CompanyName</h5>
 			<button class="btn btn-sm btn-link text-muted text-right" type="button" data-toggle="collapse" data-target="#vacancy_collapse_@c.EntityId"
 			    aria-expanded="false" aria-controls="vacancy_collapse_@c.EntityId">
