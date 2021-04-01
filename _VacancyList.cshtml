@@ -14,7 +14,7 @@
 	</div>
 }
 
-@foreach(var c in AsList (Data)) {
+@foreach(var c in AsList (Data).OrderByDescending (c => c.Modified)) {
 	<div @Edit.TagToolbar(c, settings: new { hover = "right" })>
     	<div class="card card-body mb-3">
     	    <h4 class="card-title"><span class="badge badge-primary">@c.Modified.ToShortDateString()</span> @c.Title</h4>
