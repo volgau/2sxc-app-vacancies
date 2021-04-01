@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-03-02T01:01:18.245765-08:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="11.04.00" ExportDate="2021-04-01T03:42:58.9242251-07:00">
   <Header>
     <App Guid="5cd7df1b-ac28-49a2-a749-f145bae47b60" />
     <Language Default="en-US" />
@@ -87,6 +87,20 @@
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
               <Dimension DimensionID="3" ReadOnly="false" />
             </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="btnExpand" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e0530461-7699-4b38-8c14-2602de13ca88" Json="True" KeyNumber="462">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Expand" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="btnCollapse" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="47427e10-d3d6-4ef0-b36f-820b37494dc7" Json="True" KeyNumber="463">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Collapse" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
         </Attribute>
       </Attributes>
@@ -524,12 +538,24 @@
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
         <Dimension DimensionID="3" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="01.00.00" Type="String">
+      <Value Key="Version" Value="01.01.00" Type="String">
         <Dimension DimensionID="3" ReadOnly="false" />
       </Value>
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="e1148065-eee3-466f-8fd8-713f8327ca78" KeyNumber="5" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="dfeed066-b323-4499-9006-bdfc6a6af060" KeyNumber="5">
+      <Value Key="btnCollapse" Value="Collapse" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="btnCollapse" Value="Свернуть" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
+      <Value Key="btnExpand" Value="Expand" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="btnExpand" Value="Развернуть" Type="String">
+        <Dimension DimensionID="4" ReadOnly="false" />
+      </Value>
       <Value Key="lblCompanyDescription" Value="Company Description:" Type="String">
         <Dimension DimensionID="3" ReadOnly="false" />
       </Value>
